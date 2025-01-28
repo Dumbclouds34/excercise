@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 log = logging.getLogger()
 
 uid = 'postgres'
-pwd = '07063902274'
+pwd = ''  #put  in your postgres password
 postgres_url = f'postgresql+psycopg2://{uid}:{pwd}@localhost:5432/Banks'
 
 if not database_exists(postgres_url):
