@@ -51,9 +51,9 @@ for row in rows:
             dollar_value = float(dollar_text) # Convert the parsed content to float
 
            
-            Euro = dollar_value * USD_to_EUR
-            Pound = dollar_value * USD_to_GBP
-            INR = dollar_value * USD_to_INR
+            Euro = round(dollar_value * USD_to_EUR, 2)
+            Pound = round(dollar_value * USD_to_GBP, 2)
+            INR = round(dollar_value * USD_to_INR, 2)
 
     
             data_dict = {
