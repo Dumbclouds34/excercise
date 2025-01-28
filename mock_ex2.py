@@ -32,7 +32,7 @@ log.info("Limiting the result to the first 17 rows.")
 log.info(f"Result: {merged_df}")
 
 uid = 'postgres'
-pwd = '07063902274'
+pwd = ''  # put in your password
 postgres_url = f'postgresql+psycopg2://{uid}:{pwd}@localhost:5432/best_films'
 
 if not database_exists(postgres_url):
