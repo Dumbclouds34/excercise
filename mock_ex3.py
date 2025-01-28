@@ -112,7 +112,7 @@ df['Birthdate'] = pd.to_datetime(df['Birthdate'], errors='coerce').dt.date # Con
 
 
 uid = 'postgres'
-pwd = '07063902274'
+pwd = '' #put in your password
 postgres_url = f'postgresql+psycopg2://{uid}:{pwd}@localhost:5432/PandasData'
 
 engine = create_engine(postgres_url)
